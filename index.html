@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<title>Test</title>
+<script type="text/javascript">
+  var imageURLs = [
+       "S2.jpg" 
+     , "A2.jpg", "A2.jpg", "A2.jpg", "A2.jpg", "A2.jpg", "A2.jpg", "A2.jpg", "A2.jpg"
+	 , "B2.jpg", "B2.jpg", "B2.jpg", "B2.jpg", "B2.jpg", "B2.jpg", "B2.jpg", "B2.jpg"
+	 , "C2.jpg", "C2.jpg", "C2.jpg", "C2.jpg", "C2.jpg", "C2.jpg", "C2.jpg", "C2.jpg"
+  ];
+  function getImageTag() {
+    var img = '<img src=\"';
+    var randomIndex = Math.floor(Math.random() * imageURLs.length);
+    img += imageURLs[randomIndex];
+    img += '\" alt=\"Some alt text\"/>';
+    return img;
+  }
+</script>
+</head>
+<body>
+<script type="text/javascript">
+  document.write(getImageTag());
+</script>
+</body>
+</html>
